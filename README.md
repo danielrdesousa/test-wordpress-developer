@@ -2,7 +2,7 @@
 
 Implementation of website for breed experience in WordPress with Docker. Application to WordPress dev position.
 
-Note: Uploads folder added to the repository to import images to work.
+Note: The uploads folder was added to the repository to import images to work.
 
 Contents:
 
@@ -101,5 +101,5 @@ The default username is `root`, and the password is the same as supplied in the 
 
 You can also visit `http://127.0.0.1/wp-admin` to access the admin panel after starting the containers.
 
-The default username is `admin`, and the password is `admin` file.
+The default username is `admin`, and the password is `admin`.
 
