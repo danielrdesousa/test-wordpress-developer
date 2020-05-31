@@ -1,11 +1,8 @@
 # Test - WordPress Developer
 
-Easy WordPress development with Docker and Docker Compose.
+Implementation of website for breed experience in WordPress with Docker. Application to WordPress dev position.
 
-With this project you can quickly run the following:
-
-- [phpMyAdmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-- [MySQL](https://hub.docker.com/_/mysql/)
+Note: Uploads folder added to the repository to import images to work.
 
 Contents:
 
@@ -99,3 +96,10 @@ define('WP_SITEURL','http://wp-app.local');
 You can also visit `http://127.0.0.1:8080` to access phpMyAdmin after starting the containers.
 
 The default username is `root`, and the password is the same as supplied in the `.env` file.
+
+### Wordpress
+
+You can also visit `http://127.0.0.1/wp-admin` to access the admin panel after starting the containers.
+
+The default username is `admin`, and the password is `admin` file.
+
