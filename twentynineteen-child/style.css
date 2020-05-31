@@ -1,0 +1,126 @@
+/*
+Theme Name:     Twentynineteen-child
+Theme URI:
+Description:    Twentynineteen child theme.
+Author:         Daniel Rodrigues
+Author URI:     https://www.linkedin.com/in/danielrdesousa
+Template:       twentynineteen
+Version:        0.1.0
+*/
+
+body {
+	background: url('./assets/images/bg.png');
+    background-repeat: repeat;
+    background-size: 15%;
+    background-blend-mode: luminosity;
+    background-color: #ccc;
+}
+
+.site-header.featured-image .custom-logo-link {
+	filter: brightness(100);
+	background: transparent;
+}
+
+.single-breeds .byline,
+.single-breeds .posted-on
+{
+	display: none !important;
+}
+
+.entry .entry-content > * > *:first-child,
+.entry .entry-summary > * > *:first-child,
+.entry .entry-content > * > *:last-child,
+.entry .entry-summary > * > *:last-child {
+	margin: .25rem;
+}
+
+.full-line > * > *{
+	max-width: 100% !important;
+}
+
+/*--------------------------------------------------------------
+## Custom Post Breeds
+--------------------------------------------------------------*/
+#breeds-listing {
+	width: 100%;
+	max-width: 1240px !important;
+	margin: 0 auto;
+
+	display: grid;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+
+}
+
+.breeds {
+	box-sizing: border-box;
+	margin: .25rem;
+	padding: 15px 15px 40px 15px;
+
+	background: #fff;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+	border-top: 1px solid #dedede;
+	border-bottom: 5px solid hsl(35, 100%, 33%);
+
+	position: relative;
+}
+
+.thumbnail {
+	padding-bottom: 60%;
+	background-size: cover;
+	background-position: center center;
+}
+
+.title-breed {
+	font-size: 1.2em;
+}
+
+.details-breed:hover:after {
+	border-color: hsl(35, 100%, 23%);
+}
+
+.details-breed::after {
+	content: "";
+	border: solid hsl(35, 100%, 33%);
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.description-breed {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	font-size: 0.8em;
+}
+
+.temperament-breed a{
+	color: #999 !important;
+	font-size: 0.7em;
+}
+
+.details-breed {
+	position: absolute;
+	bottom: 10px;
+	font-size: 0.7em;
+}
+
+
+@media only screen and (min-width: 500px) {
+	#breeds-listing {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (min-width: 850px) {
+	#breeds-listing {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
